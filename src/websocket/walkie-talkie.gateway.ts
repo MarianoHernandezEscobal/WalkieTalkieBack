@@ -8,7 +8,7 @@ import {
 import { Server, Socket } from 'socket.io';
 import { WalkieTalkieService } from './walkie-talkie.service';
 
-@WebSocketGateway(3001, { cors: true })
+@WebSocketGateway({ cors: true })
 export class WalkieTalkieGateway {
   @WebSocketServer()
   server: Server;
